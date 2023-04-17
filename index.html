@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+
+    <button type="button"
+    onclick="document.getElementById('demo').innerHTML = Date()">
+    Haz click para mostrar la fecha y la hora.</button>
+
+    
+     <p id="demo"></p>
+
+<br>-------------------------------------------------<br>
+
+    <p id="demo2">JavaScript puede cambiar el contenido HTML.</p>
+
+    <button type="button" onclick='document.getElementById("demo2").innerHTML = "Hola JavaScript!"'>Púlsame</button>
+
+<br>-------------------------------------------------<br>
+
+    <h2>JavaScript en el Body</h2>
+
+    <p id="demo3"></p>
+
+    <script>
+    document.getElementById("demo3").innerHTML = "Mi primer JavaScript";
+    </script>
+
+<br>-------------------------------------------------<br>
+
+    <h1>Mostrar por pantalla con innerHTML</h1>
+
+    <p id="demo4"></p>
+
+    <script>
+    document.getElementById("demo4").innerHTML = 5 + 6;
+    </script>
+
+    <h1>Mostrar por pantalla usando document.write()</h1>
+    
+    <script>
+        document.write(53 + 6);
+    </script>
+
+    <h1>Mostrar por pantalla usando window.alert()</h1>
+
+    <!-- <script>
+        window.alert(5 + 65);
+    </script> -->
+
+    <!-- <h1>Mostrar usando console.log()</h1> -->
+    
+    <script>
+        console.log(5 + 6);
+    </script>
+
+<br>-------------------------------------------------<br>
+
+    <h1>Declaraciones de variables</h1>
+
+    <p id="demo5"></p>
+
+    <script>
+        let x, y, z;  // Variable 1
+        x = 5;        // Variable 2
+        y = 6;        // Variable 3
+        z = x + y;    // Variable 4
+        
+        document.getElementById("demo5").innerHTML =
+        "El valor de z es " + z;  
+    </script>
+    
+</body>
+</html>
